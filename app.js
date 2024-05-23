@@ -62,7 +62,8 @@ connectUsingMongoose()
 
 //ROUTES
 app.get('/', (req, res) => {
-    res.send('Hey Ninja ! Go to /user/signin to see the magic.')
+	
+    res.redirect('/user/signin')
 })
 app.use('/user', router)
 app.use('/auth', authrouter)
